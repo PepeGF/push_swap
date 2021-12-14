@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/14 12:30:32 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/14 18:19:25 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 static int	ft_input_management(int argc, *char argv[]);
 static int	ft_display_error(void);
+
 
 int	main(int argc, *char argv[])
 {
