@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/15 19:44:29 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/15 19:54:23 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,13 @@ t_list	**ft_manage_input(t_list **lst, int argc, char **argv)
 	int		i;
 	int		j;
 	char	**str;
+/*
+ *
+ * OJO
+ *
+ * NO HE COPROBADO SI HAY REPETIDOS AUN
+ *
+ */
 
 	i = 1;
 	while (i < argc)
@@ -31,7 +38,7 @@ t_list	**ft_manage_input(t_list **lst, int argc, char **argv)
 				exit(EXIT_SUCCESS);
 			}
 			else
-				ft_lstadd_back(lst, ft_lstnew(&ft_atoi(str[i])));
+				ft_lstadd_back(lst, ft_lstnew(ft_atoi(str[i])));
 			j++;
 		}
 		i++;
