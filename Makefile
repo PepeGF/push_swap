@@ -4,6 +4,8 @@ OBJS = $(SRCS:.c=.o)
 
 NAME = push_swap
 
+LIBFT_PATH = libft/
+
 CC = gcc
 
 CFLAGS = -g -Wall -Werror -Wextra
@@ -13,16 +15,22 @@ RM = rm -f
 all: $(NAME)
 
 %.o:%.c
-	@$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+	@$(CC) $(CFLAGS) -c $< -o $(<:.c=.o) -I$(LIBFT_PATH)
 
 $(NAME): $(OBJS)
-	
-
+	@$(MAKE) -C $(LIBFT_PATH)
+	@$(CC) -o $(NAME) $?  -L./libft -lft 
+	@echo "push_swap: ready to be executed"
 
 clean:
+	@$(RM) $(OBJS)
+	@$(MAKE) -C $(LIBFT_PATH) clean
 
-fclean:
+fclean: clean
+	@$(RM) $(NAME)
+	@$(MAKE) -C $(LIBFT_PATH) fclean
 
-re:
+re: fclean $(NAME)
+	@$(MAKE) -C $(LIBFT_PATH) clean
 
 .PHONY: all clean fclean re
