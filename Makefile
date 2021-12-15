@@ -1,4 +1,4 @@
-SRCS = push_swap.c
+SRCS = push_swap.c ft_verify_input.c ft_manage_input.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -19,7 +19,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(MAKE) -C $(LIBFT_PATH)
-	@$(CC) -o $(NAME) $?  -L./libft -lft 
+	@$(CC) -o $(NAME) $?  I. -L./libft -lft 
 	@echo "push_swap: ready to be executed"
 
 clean:
