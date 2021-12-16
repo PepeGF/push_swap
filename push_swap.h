@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:40:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/15 19:40:06 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/16 19:17:29 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ typedef struct s_list
 
 t_list	**ft_manage_input(t_list **lst, int argc, char **argv);
 int		ft_verify_input(char *str);
+void	ft_error_exit(void);
+int		ft_check_repeated(t_list **lst);
 
 #endif
