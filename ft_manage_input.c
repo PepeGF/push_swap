@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/18 18:50:58 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/18 19:36:57 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_check_repeated(t_list *lst)
 	return (1);
 }
 */
-/*
+
 void	ft_print_list(t_list *lst)
 {
 	if (!lst)
@@ -39,47 +39,34 @@ void	ft_print_list(t_list *lst)
 		lst = lst->next;
 	}
 }
-*/
+
 
 t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 {
 	int		i;
 	int		j;
 	char	**str;
-//	t_list	*node;
 
-//	printf("%p\n", lst);
 	i = 1;
-/*	j = ft_atoi(argv[i]);
-	printf("%d\n", j);
-
-	
-	j = ft_atoi(argv[2]);
-	printf("%d\n", j);
-	wololo = ft_lstnew(j);
-	printf("--->%d\n", wololo->num);
-	printf("--->%p\n", wololo->next);
-*/
 	while (i < argc)
 	{
 		j = 0;
 		str = ft_split(argv[i], ' ');
 		while (str[j])
 		{
-		//	if (ft_isnum(str[j]))
-//				node = ft_lstnew(ft_atoi(str[j]));
+			if (!ft_isnum(str[j]))
+			{
 				ft_lstadd_back(lst, ft_lstnew(ft_atoi(str[j])));
-//			write(1, "WOLOLO\n", 7);
-			//free(str[j]);
-		//	else
-		//	{
-		//		write(1, "Error\n", 6);
-		//		exit(EXIT_SUCCESS);
-		//	}
+				free(str[j]);
+			}
+			else
+			{
+				write(1, "Error\n", 6);
+				exit(EXIT_SUCCESS);
+			}
 			j++;
 		}
-
-		//free(str);
+		free(str);
 		i++;
 	}
 	return (0);

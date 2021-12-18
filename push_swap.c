@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/17 18:22:52 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/18 19:19:20 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ int	main(int argc, char *argv[])
 	t_list	*stack_b;
 
 	(void)stack_b;
+	stack_a = 0;
 	ft_create_stack(&stack_a, argc, argv);
-	//ft_print_list(stack_a);
+	ft_print_list(stack_a);
 	return (0);
 }
