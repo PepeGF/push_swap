@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 11:15:50 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/17 18:01:04 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/17 18:45:26 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 typedef struct s_list
 {
