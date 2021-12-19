@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 20:43:18 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/19 21:02:53 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/19 22:42:16 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /* El primer elemento de a pasa a ser el primero de b
  */
 
-void	ft_pa(t_list **lst_a, t_list **lft_b)
+void	ft_pa(t_list **lst_a, t_list **lst_b)
 {
 	t_list	*aux;
 
