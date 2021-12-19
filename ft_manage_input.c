@@ -6,12 +6,11 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/19 13:53:54 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 00:09:47 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
 
 t_list	*ft_lstnew(int num);
 void	ft_lstadd_back(t_list **lst, t_list *new);
@@ -43,7 +42,6 @@ void	ft_print_list(t_list *lst)
 	}
 }
 
-
 t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 {
 	int		i;
@@ -53,9 +51,9 @@ t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		j = 0;
+		j = -1;
 		str = ft_split(argv[i], ' ');
-		while (str[j])
+		while (str[++j])
 		{
 			if (!ft_isnum(str[j]))
 			{
@@ -64,10 +62,8 @@ t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 			}
 			else
 			{
-				write(1, "Error\n", 6);
-				exit(EXIT_SUCCESS);
+				ft_error_exit();
 			}
-			j++;
 		}
 		free(str);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 20:43:18 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/19 22:42:16 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 00:06:20 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ void	ft_pa(t_list **lst_a, t_list **lst_b)
 	*lst_a = aux;
 }
 
-void   ft_pb(t_list **lst_b, t_list **lst_a)
+void	ft_pb(t_list **lst_b, t_list **lst_a)
 {
-	t_list *aux;
+	t_list	*aux;
 
 	aux = (*lst_b)->next;
 	(*lst_b)->next = *lst_a;

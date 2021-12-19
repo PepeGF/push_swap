@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/19 22:56:36 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/19 23:29:26 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,16 @@ int	main(int argc, char *argv[])
 	ft_create_stack(&stack_b, argc, argv);
 	printf("--------A---------\n");
 	ft_print_list(stack_a);
-	printf("--------B---------\n");
-	ft_sb(&stack_b);
-	ft_print_list(stack_b);
-	printf("------------------\n");
+//	printf("--------B---------\n");
+//	ft_sb(&stack_b);
+//	ft_print_list(stack_b);
+	printf("------------------\n\n");
 //	printf("--------AMBAS-----\n");
-	ft_pb(&stack_b, &stack_a);
 	printf("--------A---------\n");
+	ft_ra(&stack_a);
 	ft_print_list(stack_a);
-	printf("--------B---------\n");
-	ft_print_list(stack_b);
+//	printf("--------B---------\n");
+//	ft_print_list(stack_b);
 
 	return (0);
 }
