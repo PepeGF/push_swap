@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/18 19:36:57 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/19 13:53:54 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,15 @@ int	ft_check_repeated(t_list *lst)
 
 void	ft_print_list(t_list *lst)
 {
+	t_list	*aux;
+
 	if (!lst)
 		return ;
-	while (lst)
+	aux = lst;
+	while (aux)
 	{
-		printf("%d\n", lst->num);
-		lst = lst->next;
+		printf("%d\n", aux->num);
+		aux = aux->next;
 	}
 }
 
@@ -71,7 +74,7 @@ t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 	}
 	return (0);
 }
-
+/*
 t_list	*ft_lstnew(int num)
 {
 	t_list	*new;
@@ -109,4 +112,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 }
 
 
-
+*/
