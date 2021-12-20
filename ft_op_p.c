@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 20:43:18 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 00:06:20 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 15:51:09 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void	ft_pa(t_list **lst_a, t_list **lst_b)
 	(*lst_a)->next = *lst_b;
 	*lst_b = *lst_a;
 	*lst_a = aux;
+	write(1, "pa\n", 3);
 }
 
 void	ft_pb(t_list **lst_b, t_list **lst_a)
@@ -33,4 +34,5 @@ void	ft_pb(t_list **lst_b, t_list **lst_a)
 	(*lst_b)->next = *lst_a;
 	*lst_a = *lst_b;
 	*lst_b = aux;
+	write(1, "pb\n", 3);
 }

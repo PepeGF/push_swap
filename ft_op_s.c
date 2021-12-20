@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 11:28:48 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/19 19:59:44 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 16:05:12 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	ft_sa(t_list **lst)
 		(*lst)->next->next = *lst;
 		(*lst) = (*lst)->next;
 		(*lst)->next->next = aux;
+		write(1, "sa\n", 3);
 	}
 }
 
@@ -43,6 +44,7 @@ void	ft_sb(t_list **lst)
 		(*lst)->next->next = *lst;
 		(*lst) = (*lst)->next;
 		(*lst)->next->next = aux;
+		write(1, "sa\n", 3);
 	}
 }
 

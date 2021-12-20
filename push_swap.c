@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 12:34:09 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 16:27:45 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ int	main(int argc, char *argv[])
 	ft_check_duplicate(stack_a);
 	if (ft_lstsize(stack_a) == 0)
 		ft_error_exit();
+	ft_print_list(stack_a);
+	if (ft_lstsize(stack_a) == 3)
+		ft_order_3(&stack_a);
 	ft_print_list(stack_a);
 	return (0);
 }
