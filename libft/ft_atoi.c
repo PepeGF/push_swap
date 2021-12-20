@@ -6,26 +6,17 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 11:21:29 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/15 20:09:38 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 13:22:37 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	check_overflows(unsigned long long n, int neg)
+long int	ft_atoi(const char *str)
 {
-	if (neg == -1 && n > 9223372036854775807)
-		return (0);
-	if (neg == 1 && n > 9223372036854775807)
-		return (-1);
-	return (n);
-}
-
-int	ft_atoi(const char *str)
-{
-	int					i;
-	unsigned long long	n;
-	int					neg;
+	int			i;
+	long int	n;
+	int			neg;
 
 	i = 0;
 	neg = 1;
@@ -44,6 +35,5 @@ int	ft_atoi(const char *str)
 		n = n * 10 + str[i] - '0';
 		i++;
 	}
-	n = check_overflows(n, neg);
 	return (n * neg);
 }

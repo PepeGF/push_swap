@@ -6,27 +6,17 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 10:46:36 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 13:49:45 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-t_list	*ft_lstnew(int num);
-void	ft_lstadd_back(t_list **lst, t_list *new);
 
 void	ft_error_exit(void)
 {
 	write(1, "Error\n", 6);
 	exit(EXIT_SUCCESS);
 }
-/*
-int	ft_check_repeated(t_list *lst)
-{
-	(void)lst;
-	return (1);
-}
-*/
 
 void	ft_print_list(t_list *lst)
 {
@@ -37,7 +27,6 @@ void	ft_print_list(t_list *lst)
 	aux = lst;
 	while (aux)
 	{
-		printf("%d\n", aux->num);
 		aux = aux->next;
 	}
 }
@@ -62,7 +51,6 @@ t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 			}
 			else
 			{
-				//posible necesario liberar cosas
 				ft_error_exit();
 			}
 		}
