@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 18:26:05 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/17 14:00:16 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 11:45:54 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,24 @@ int	ft_isnum(char *str)
 	}
 	else
 		return (1);
+}
+
+int	ft_check_duplicate(t_list *lst)
+{
+	t_list	*aux;
+
+	while (lst)
+	{
+		aux = lst->next;
+		while (aux)
+		{
+			if (lst->num == aux->num)
+			{
+				return (1);
+			}
+			aux = aux->next;
+		}
+		lst = lst->next;
+	}
+	return (0);
 }

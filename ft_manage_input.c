@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 00:09:47 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/20 10:46:36 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 			}
 			else
 			{
+				//posible necesario liberar cosas
 				ft_error_exit();
 			}
 		}
@@ -70,42 +71,3 @@ t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 	}
 	return (0);
 }
-/*
-t_list	*ft_lstnew(int num)
-{
-	t_list	*new;
-	
-	new = malloc(sizeof(t_list));
-	if (!new)
-		exit(EXIT_FAILURE);
-	new->num = num;
-	new->next = NULL;
-	return (new);
-}
-
-t_list *ft_lstlast(t_list *lst)
-{
-	if (!lst)
-		return (0);
-	while (lst->next)
-		lst = lst->next;
-	return (lst);
-}
-
-void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	*old_last;
-
-	if (!*lst)
-	{
-		*lst = new;
-		return ;
-	}
-	if (!new)
-		return ;
-	old_last = ft_lstlast(*lst);
-	old_last->next = new;
-}
-
-
-*/
