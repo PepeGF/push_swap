@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/21 12:28:52 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/21 14:07:19 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,9 @@ int	main(int argc, char *argv[])
 {
 	t_list	*stack_a;
 	t_list	*stack_b;
-int max = 0;
-int min = 0;
+//int max = 0;
+//int min = 0;
+int	check = 0;
 
 	stack_a = 0;
 	stack_b = 0;
@@ -29,15 +30,17 @@ int min = 0;
 	if (ft_lstsize(stack_a) == 0)
 		ft_error_exit();
 	ft_print_list(stack_a);
-//	if (ft_lstsize(stack_a) == 3)
-//		ft_order_3(&stack_a);
+	if (ft_lstsize(stack_a) == 3)
+		ft_order_3(&stack_a);
+	check = ft_check_order(stack_a);
+	printf("Ordenado?? %d\n", check);
 //
 //	ft_print_list(stack_a);
 
-	max = ft_max_value(stack_a);
-printf("Max: %d\n", max);
-min = ft_min_value(stack_a);
-printf("Min: %d\n", min);
+//max = ft_max_value(stack_a);
+//printf("Max: %d\n", max);
+//min = ft_min_value(stack_a);
+//printf("Min: %d\n", min);
 
 	return (0);
 }

@@ -1,6 +1,6 @@
 SRCS = push_swap.c ft_verify_input.c ft_manage_input.c \
 	   ft_op_s.c ft_op_p.c ft_op_r.c ft_op_rr.c \
-	   ft_maxmin.c
+	   ft_maxmin.c ft_check_order.c ft_order_3.c
 
 
 OBJS = $(SRCS:.c=.o)

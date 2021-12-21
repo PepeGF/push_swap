@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/21 12:28:02 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/21 13:15:16 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_print_list(t_list *lst)
 	aux = lst;
 	while (aux)
 	{
-	printf("%ld\n", aux->num);
+		printf("%ld\n", aux->num);
 		aux = aux->next;
 	}
 }
