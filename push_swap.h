@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:40:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 13:28:18 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/21 12:36:43 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,23 @@
 # include <limits.h>
 # include "./libft/libft.h"
 
+typedef struct	s_list
+{
+	int	max;
+	int	min;
+}	t_stack;
+
 t_list	**ft_manage_input(t_list **lst, int argc, char **argv);
 int		ft_isnum(char *str);
 void	ft_error_exit(void);
-//int		ft_check_repeated(t_list *lst);
+//int	ft_check_repeated(t_list *lst);
 //
 //posiblemente ESTA FUNCION NO ES NECESARIA, si fuese necesaria adaptarla
 //printf propio
 void	ft_print_list(t_list *lst);
 
 t_list	**ft_create_stack(t_list **lst, int argc, char **argv);
-int	ft_check_duplicate(t_list *lst);
+int		ft_check_duplicate(t_list *lst);
 
 void	ft_sa(t_list **lst);
 void	ft_sb(t_list **lst);
@@ -41,5 +47,6 @@ void	ft_rra(t_list **lst);
 void	ft_rrb(t_list **lst);
 void	ft_rrr(t_list **lst_a, t_list **lst_b);
 
-
+int		ft_max_value(t_list *lst);
+int		ft_min_value(t_list *lst);
 #endif
