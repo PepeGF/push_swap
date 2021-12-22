@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 16:27:58 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/21 14:23:11 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:44:09 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_order_3(t_list **lst)
 {
 	int	min;
-	int max;
+	int	max;
 
 	min = ft_min_value(*lst);
 	max = ft_max_value(*lst);
@@ -24,15 +24,15 @@ void	ft_order_3(t_list **lst)
 		ft_sa(lst);
 		ft_ra(lst);
 	}
-	else if ((*lst)->num != max && (*lst)->num != min && (*lst)->next->num == min)
+	else if ((*lst)->next->num == min && (ft_lstlast(*lst))->num == max)
 		ft_sa(lst);
-	else if ((*lst)->num != max && (*lst)->num != min && (*lst)->next->num == max)
+	else if ((*lst)->next->num == max && (ft_lstlast(*lst))->num == min)
 		ft_rra(lst);
 	else if ((*lst)->num == max && (*lst)->next->num == min)
 		ft_ra(lst);
-	else if ((*lst)->num == max && (*lst)->next->num != max && (*lst)->num != min)
+	else if ((*lst)->num == max && (ft_lstlast(*lst))->num == min)
 	{
 		ft_ra(lst);
-		ft_ra(lst);
+		ft_sa(lst);
 	}
 }

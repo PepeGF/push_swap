@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_orden.c                                   :+:      :+:    :+:   */
+/*   ft_check_order.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 12:52:10 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/21 13:43:27 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:37:08 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,10 @@ int	ft_check_order(t_list *lst)
 	{
 		if (aux->num > aux->next->num)
 		{
-			return (0);
+			return (check);
 		}
 		aux = aux->next;
 	}
-	return (1);
+	check = 1;
+	return (check);
 }
