@@ -6,13 +6,19 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/16 11:21:29 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 13:22:37 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/22 14:53:55 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long int	ft_atoi(const char *str)
+static void	ft_error_exit(void)
+{
+	write(1, "Error\n", 6);
+	exit(1);
+}
+
+int	ft_atoi(const char *str)
 {
 	int			i;
 	long int	n;
@@ -35,5 +41,8 @@ long int	ft_atoi(const char *str)
 		n = n * 10 + str[i] - '0';
 		i++;
 	}
-	return (n * neg);
+	n *= neg;
+	if (n > INT_MAX || n < INT_MIN)
+		ft_error_exit();
+	return (n);
 }
