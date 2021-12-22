@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:40:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/21 14:08:30 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/22 15:02:04 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,6 @@ void	ft_rra(t_list **lst);
 void	ft_rrb(t_list **lst);
 void	ft_rrr(t_list **lst_a, t_list **lst_b);
 
-int		ft_max_value(t_list *lst);
-int		ft_min_value(t_list *lst);
+int		ft_lstmax_value(t_list *lst);
+int		ft_lstmin_value(t_list *lst);
 #endif

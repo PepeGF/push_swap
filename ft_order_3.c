@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 16:27:58 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/22 14:44:09 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/22 15:04:37 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	ft_order_3(t_list **lst)
 	int	min;
 	int	max;
 
-	min = ft_min_value(*lst);
-	max = ft_max_value(*lst);
+	min = ft_lstmin_value(*lst);
+	max = ft_lstmax_value(*lst);
 	if ((*lst)->num == min && (*lst)->next->num == max)
 	{
 		ft_sa(lst);
