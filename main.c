@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/22 14:38:56 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/23 13:24:44 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int argc, char *argv[])
 	t_list	*stack_b;
 //int max = 0;
 //int min = 0;
-int	check = 0;
+//int	check = 0;
 
 	stack_a = 0;
 	stack_b = 0;
@@ -32,9 +32,11 @@ int	check = 0;
 	ft_print_list(stack_a);
 	if (ft_lstsize(stack_a) == 3)
 		ft_order_3(&stack_a);
-	check = ft_check_order(stack_a);
-	printf("Ordenado?? %d\n", check);
-	ft_print_list(stack_a);
+	if (ft_lstsize(stack_a) == 5)
+		ft_order_5(&stack_a, &stack_b);
+	//check = ft_check_order(stack_a);
+	//printf("Ordenado?? %d\n", check);
+	//ft_print_list(stack_a);
 //
 //	ft_print_list(stack_a);
 

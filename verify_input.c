@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 18:26:05 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 13:29:08 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/23 12:49:12 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,12 @@ int	ft_isnum(char *str)
 		return (1);
 }
 
-void	ft_check_overflow(long int num)
-{
-	if (num < INT_MIN || num > INT_MAX)
-	{
-		ft_error_exit();
-	}
-}
-
 int	ft_check_duplicate(t_list *lst)
 {
 	t_list	*aux;
 
 	while (lst)
 	{
-		ft_check_overflow(lst->num);
 		aux = lst->next;
 		while (aux)
 		{

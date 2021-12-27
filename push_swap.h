@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:40:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/22 15:02:04 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/23 13:19:43 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ int		ft_check_duplicate(t_list *lst);
 int		ft_check_order(t_list *lst);
 
 void	ft_order_3(t_list **lst);
+void	ft_order_5(t_list **lst_a, t_list **lst_b);
 
 void	ft_sa(t_list **lst);
 void	ft_sb(t_list **lst);
@@ -52,4 +53,6 @@ void	ft_rrr(t_list **lst_a, t_list **lst_b);
 
 int		ft_lstmax_value(t_list *lst);
 int		ft_lstmin_value(t_list *lst);
+int		ft_lstgetmax_index(t_list *lst);
+int		ft_lstgetmin_index(t_list *lst);
 #endif

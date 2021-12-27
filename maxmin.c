@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 10:59:44 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/22 15:14:43 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/23 13:00:44 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_lstmin_value(t_list *lst)
 	return (min);
 }
 
-int	ft_lstmax_index(t_list *lst)
+int	ft_lstgetmax_index(t_list *lst)
 {
 	int		max_value;
 	int		index;
@@ -69,7 +69,7 @@ int	ft_lstmax_index(t_list *lst)
 	return (index);
 }
 
-int	ft_lstmin_index(t_list *lst)
+int	ft_lstgetmin_index(t_list *lst)
 {
 	int		min_value;
 	int		index;

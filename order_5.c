@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_order_10.c                                      :+:      :+:    :+:   */
+/*   order_5.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/22 14:56:56 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/22 20:58:51 by josgarci         ###   ########.fr       */
+/*   Created: 2021/12/23 13:04:51 by josgarci          #+#    #+#             */
+/*   Updated: 2021/12/23 13:21:54 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_order_10(t_list **lst_a, t_list **lst_b)
+void	ft_order_5(t_list **lst_a, t_list **lst_b)
 {
 	int		len_a;
-	int		max;
+	int		min;
+	int		min_index;
 
-	len_a = ft_lstsize(*lst);
-	while (!ft_check_order && ft_lstsize(*lst) < len_a)
-	{
-		max = ft_lstmax_value(*lst);
-
-	}
-		(void)len_a;
-		(void)max;
-
+	(void)lst_b;
+	len_a = 5;
+	min = ft_lstmin_value(*lst_a);
+	min_index = ft_lstgetmin_index(*lst_a);
+	printf("Valor mínimo: %d\nÍndice del min: %d\n", min, min_index);
+	(void)len_a;
 }
