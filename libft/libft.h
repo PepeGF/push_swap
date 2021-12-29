@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 11:15:50 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/22 14:55:09 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/29 20:04:57 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
 
 typedef struct s_list
 {
-	long int		num;
+	int				num;
+	int				range;
 	struct s_list	*next;
 }	t_list;
 

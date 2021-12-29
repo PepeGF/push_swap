@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:40:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/23 13:19:43 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/29 20:16:46 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <limits.h>
 # include "./libft/libft.h"
 
-typedef struct	s_stack
+typedef struct s_stack
 {
 	int	max;
 	int	min;
@@ -40,6 +40,7 @@ int		ft_check_order(t_list *lst);
 
 void	ft_order_3(t_list **lst);
 void	ft_order_5(t_list **lst_a, t_list **lst_b);
+void	ft_range(t_list *lst);
 
 void	ft_sa(t_list **lst);
 void	ft_sb(t_list **lst);

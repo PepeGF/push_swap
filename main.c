@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/29 15:57:32 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/29 20:23:21 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	main(int argc, char *argv[])
 	//ft_print_list(stack_a);
 	if (ft_lstsize(stack_a) == 3)
 		ft_order_3(&stack_a);
-	if (ft_lstsize(stack_a) <= 100)
+	if (ft_lstsize(stack_a) <= 150)
 		ft_order_5(&stack_a, &stack_b);
 	//check = ft_check_order(stack_a);
 	//printf("Ordenado?? %d\n", check);

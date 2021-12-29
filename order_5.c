@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/23 13:04:51 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/29 15:49:37 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/29 20:02:20 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,4 @@ void	ft_order_5(t_list **lst_a, t_list **lst_b)
 	{
 		ft_pa(lst_b, lst_a);
 	}
-		ft_pa(lst_b, lst_a);
 }
