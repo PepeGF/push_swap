@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_manage_input.c                                  :+:      :+:    :+:   */
+/*   manage_input.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/21 13:15:16 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/29 14:14:06 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ void	ft_print_list(t_list *lst)
 	aux = lst;
 	while (aux)
 	{
-		printf("%ld\n", aux->num);
+		printf("%ld  ", aux->num);
 		aux = aux->next;
 	}
+	printf("\n");
 }
 
 t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
