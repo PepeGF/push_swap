@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/29 23:19:21 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 00:11:25 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,11 @@ void	ft_initialize_range(t_list *lst)
 		aux->range = -1;
 		aux = aux->next;
 	}
+	aux = lst;
+	aux->range = 2;
+	aux->next->range = 1;
+	aux->next->next->range = 3;
+//	aux->next->next->next->range = 4;
 	ft_range(lst);
 }
 
