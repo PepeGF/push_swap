@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 19:34:09 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 22:54:20 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_error_exit(void)
 	exit(EXIT_SUCCESS);
 }
 
-void	ft_print_list(t_list *lst)
+/*void	ft_print_list(t_list *lst)
 {
 	t_list	*aux;
 
@@ -33,20 +33,8 @@ void	ft_print_list(t_list *lst)
 	}
 	printf("---------\n");
 }
-
-/*static void	ft_initialize_range(t_list *lst)
-{
-	t_list	*aux;
-
-	aux = lst;
-	while (aux)
-	{
-		aux->range = -1;
-		aux = aux->next;
-	}
-	ft_range(lst);
-}
 */
+
 t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 {
 	int		i;

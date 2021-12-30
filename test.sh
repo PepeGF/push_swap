@@ -10,7 +10,7 @@ do
 	ARG=$(ruby -e "puts (1..$lenlist).to_a.shuffle.join(' ')")
 	ret=$(./push_swap $ARG | wc -l)
 	var=$(($ret + $var))
-	echo $ret
+	#echo $ret
 	if [[ $(($i % 10)) == 0 ]]
 	then
 		echo "..."

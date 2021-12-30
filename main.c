@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 22:35:54 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 23:01:46 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int argc, char *argv[])
 		return (0);
 	else if (total_numbers == 3)
 		ft_order_3(&stack_a);
-	else if (total_numbers <= 5)
+	else if (total_numbers <= 31)
 		ft_order_5(&stack_a, &stack_b);
 	else
 		ft_radix_sort(&stack_a, &stack_b);

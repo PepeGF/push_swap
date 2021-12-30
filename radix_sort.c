@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/30 19:51:48 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 22:22:37 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 23:02:12 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,6 @@ void	ft_radix_sort(t_list **lst_a, t_list **lst_b)
 
 static int	ft_bit_big(int lstlen)
 {
-	if (lstlen <= 7)
-		return (3);
-	if (lstlen <= 15)
-		return (4);
-	if (lstlen <= 31)
-		return (5);
 	if (lstlen <= 63)
 		return (6);
 	if (lstlen <= 127)
