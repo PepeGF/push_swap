@@ -6,35 +6,65 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/30 19:51:48 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 20:29:53 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 22:22:37 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+static int	ft_bit_big(int lstlen);
 
 void	ft_radix_sort(t_list **lst_a, t_list **lst_b)
 {
 	int		i;
 	int		bit;
 	int		len_a;
+	int		bit_max;
 
-	i = 1;
-	bit = 0;
+	bit = -1;
 	len_a = ft_lstsize(*lst_a);
-	while (i <= len_a)
+	bit_max = ft_bit_big(len_a);
+	while (++bit < bit_max)
 	{
-		if ((((*lst_a)->range) >> bit) % 2 == 0)
+		i = 1;
+		while (i <= len_a)
 		{
-			ft_pb(lst_a, lst_b);
+			if ((((*lst_a)->range) >> bit) % 2 == 0)
+				ft_pb(lst_a, lst_b);
+			else
+				ft_ra(lst_a);
+			i++;
 		}
-		else
-		{
-			ft_ra(lst_a);
-		}
-		i++;
+		while (*lst_b)
+			ft_pa(lst_b, lst_a);
 	}
+}
+/*
 	printf("Stack A:\n");
 	ft_print_list(*lst_a);
 	printf("Stack B:\n");
 	ft_print_list(*lst_b);
+*/
+
+static int	ft_bit_big(int lstlen)
+{
+	if (lstlen <= 7)
+		return (3);
+	if (lstlen <= 15)
+		return (4);
+	if (lstlen <= 31)
+		return (5);
+	if (lstlen <= 63)
+		return (6);
+	if (lstlen <= 127)
+		return (7);
+	if (lstlen <= 255)
+		return (8);
+	if (lstlen <= 511)
+		return (9);
+	if (lstlen <= 1023)
+		return (10);
+	if (lstlen <= 2047)
+		return (11);
+	return (32);
 }
