@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:40:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 22:54:31 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 23:29:01 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct s_stack
 	int	min;
 }	t_stack;
 
+//void	ft_print_list(t_list *lst);
 t_list	**ft_manage_input(t_list **lst, int argc, char **argv);
 int		ft_isnum(char *str);
 void	ft_error_exit(void);

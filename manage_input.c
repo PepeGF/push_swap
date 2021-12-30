@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 22:54:20 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 23:28:18 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	ft_error_exit(void)
 	write(1, "Error\n", 6);
 	exit(EXIT_SUCCESS);
 }
-
-/*void	ft_print_list(t_list *lst)
+/*
+void	ft_print_list(t_list *lst)
 {
 	t_list	*aux;
 
