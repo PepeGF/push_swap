@@ -1,8 +1,7 @@
 SRCS = main.c verify_input.c manage_input.c \
 	   ft_op_s.c ft_op_p.c ft_op_r.c ft_op_rr.c \
 	   maxmin.c check_order.c ft_order_3.c order_5.c \
-	   range.c
-
+	   range.c radix_sort.c
 
 OBJS = $(SRCS:.c=.o)
 

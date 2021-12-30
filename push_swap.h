@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:40:04 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 19:34:22 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 20:15:19 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int		ft_check_order(t_list *lst);
 void	ft_order_3(t_list **lst);
 void	ft_order_5(t_list **lst_a, t_list **lst_b);
 void	ft_range(t_list *lst);
+void	ft_radix_sort(t_list **lst_a, t_list **lst_b);
 
 void	ft_sa(t_list **lst);
 void	ft_sb(t_list **lst);

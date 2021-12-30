@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 19:33:43 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 20:15:41 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,16 @@ int	main(int argc, char *argv[])
 	ft_range(stack_a);
 	ft_check_duplicate(stack_a);
 	total_numbers = ft_lstsize(stack_a);
-	chunks = ft_parts(total_numbers);
 	ft_print_list(stack_a);
-	if (ft_lstsize(stack_a) == 0)
+	if (total_numbers == 0)
 		ft_error_exit();
-	if (ft_lstsize(stack_a) == 3)
+	if (total_numbers == 3)
 		ft_order_3(&stack_a);
-	if (ft_lstsize(stack_a) <= 500)
+	if (total_numbers <= 5)
 		ft_order_5(&stack_a, &stack_b);
-	
-	ft_print_list(stack_a);
+	if (total_numbers <= 100)
+		ft_radix_sort(&stack_a, &stack_b);
+//	ft_print_list(stack_a);
 
 
 
