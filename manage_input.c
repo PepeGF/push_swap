@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 19:41:41 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 10:40:14 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/30 14:07:06 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,16 @@ void	ft_print_list(t_list *lst)
 	if (!lst)
 		return ;
 	aux = lst;
+	printf("---------\n");
 	while (aux)
 	{
 		printf("%d - %d\n", aux->num, aux->range);
 		aux = aux->next;
 	}
+	printf("---------\n");
 }
 
-void	ft_initialize_range(t_list *lst)
+/*static void	ft_initialize_range(t_list *lst)
 {
 	t_list	*aux;
 
@@ -42,14 +44,9 @@ void	ft_initialize_range(t_list *lst)
 		aux->range = -1;
 		aux = aux->next;
 	}
-//	aux = lst;
-//	aux->range = 2;
-//	aux->next->range = 1;
-//	aux->next->next->range = 3;
-//	aux->next->next->next->range = 4;
 	ft_range(lst);
 }
-
+*/
 t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 {
 	int		i;
@@ -73,7 +70,11 @@ t_list	**ft_create_stack(t_list **lst, int argc, char **argv)
 		}
 		free(str);
 		i++;
-		ft_initialize_range(*lst);
 	}
 	return (0);
 }
+//	aux = lst;
+//	aux->range = 2;
+//	aux->next->range = 1;
+//	aux->next->next->range = 3;
+//	aux->next->next->next->range = 4;
