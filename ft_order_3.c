@@ -6,11 +6,16 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 16:27:58 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/22 15:04:37 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 23:17:31 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ * Esta función tiene previstas las 5+1 posibilidades existentes para colocar
+ * tres números, 5 de ellas desordenadas y una ordenada.
+ */
 
 void	ft_order_3(t_list **lst)
 {

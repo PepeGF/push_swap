@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_maxmin.c                                        :+:      :+:    :+:   */
+/*   maxmin.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 10:59:44 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/23 13:00:44 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 23:46:58 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ * Esta colección de funciones busca los valores máximos y mínimos,
+ * también busca el índice de  esos valores máximos y mínimos.
+ */
 
 int	ft_lstmax_value(t_list *lst)
 {

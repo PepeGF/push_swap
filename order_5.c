@@ -6,11 +6,17 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/23 13:04:51 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/31 18:02:02 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 23:50:58 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ * Esta función estaba pensada para ordenar listas de 5 elementos, aunque se
+ * usa también para ordenar listas cortas, de hasta 30 elementos.
+ * Se podría usar para cualquier longitud, pero sin eficiencia.
+ */
 
 void	ft_order_5(t_list **lst_a, t_list **lst_b)
 {

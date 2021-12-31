@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 09:21:13 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 16:04:19 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 23:15:12 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
  * El último elemento de la lista pasa a ser el primero, el primero pasa
  * al segundo y el penúltimo pasa al último.
- * Se desplazan todos hacia la derecha/abajo
+ * Se desplazan todos hacia la derecha/abajo.
  */
 
 void	ft_rra(t_list **lst)

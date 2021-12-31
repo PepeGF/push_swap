@@ -6,11 +6,18 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/30 19:51:48 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/31 17:28:31 by josgarci         ###   ########.fr       */
+/*   Updated: 2022/01/01 00:31:50 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+/*
+ * Esta es la función principal que ordena. Usa el algoritmo radix sort.
+ * Se basa en ir ordenando empezando por el final del número cifra a cifra.
+ * Pero ese número será usado en binario y será la posición que asginó
+ * la función range.
+ * La cantidad de bits necesarios dependerá de cuántos números tenga la lista.
+ */
 
 static int	ft_bit_big(int lstlen);
 
@@ -39,12 +46,6 @@ void	ft_radix_sort(t_list **lst_a, t_list **lst_b)
 			ft_pa(lst_b, lst_a);
 	}
 }
-/*
-	printf("Stack A:\n");
-	ft_print_list(*lst_a);
-	printf("Stack B:\n");
-	ft_print_list(*lst_b);
-*/
 
 static int	ft_bit_big(int lstlen)
 {

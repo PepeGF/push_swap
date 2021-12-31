@@ -6,11 +6,16 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 23:10:11 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/20 15:57:47 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 23:14:22 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ * Las funciones de tipo "r" pone el primer elemento de la lista en la última
+ * posición. El segundo pasa a ser el primero.
+ */
 
 void	ft_ra(t_list **lst)
 {

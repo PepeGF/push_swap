@@ -6,14 +6,14 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/19 20:43:18 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 23:25:39 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 23:10:50 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-/* Con pb el primer elemento de a pasa a ser el primero de b
- * Con pa el primero de b pasa a ser el primero de a
+/* Con pb el primer elemento de a pasa a ser el primero de b.
+ * Con pa el primero de b pasa a ser el primero de a.
  */
 
 void	ft_pb(t_list **lst_a, t_list **lst_b)

@@ -6,11 +6,15 @@
 /*   By: josgarci <josgarci@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/29 20:00:39 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/30 14:05:18 by josgarci         ###   ########.fr       */
+/*   Updated: 2022/01/01 00:12:40 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ * Esta función asigna a cada número la posición que va a tener desde 1 hasta n.
+ */
 
 static int	ft_lstmin_partial(t_list *lst);
 

@@ -6,11 +6,20 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/31 19:39:20 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 23:24:09 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ * Se empieza creando la lista de números a partir de los datos de entrada.
+ * Durante la creación de la lista se verifica que sean todos números.
+ * Después se comprueba si hay duplicados.
+ * Se asigna un valor que indica la posición final que deberá tener cada num.
+ * Se verifica si la lista dada está directamente ordenada.
+ * Se ejecuta el algoritmo de ordenación que depende de la cantidad de números.
+ */
 
 int	main(int argc, char *argv[])
 {

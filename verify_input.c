@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_verify_input.c                                  :+:      :+:    :+:   */
+/*   verify_input.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 18:26:05 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/23 12:49:12 by josgarci         ###   ########.fr       */
+/*   Updated: 2022/01/01 00:18:03 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+/*
+ * isnum verifica que las cadenas de texto correspondan a números.
+ * check duplicate verifica si hay o no números duplicados
+ */
 
 int	ft_isnum(char *str)
 {
