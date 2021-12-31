@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 16:53:24 by josgarci          #+#    #+#             */
-/*   Updated: 2021/09/27 17:54:24 by josgarci         ###   ########.fr       */
+/*   Updated: 2021/12/31 18:26:06 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 static int	ft_count_substr(char const *s, char c);
 static void	ft_memasig(char *aux, char c, char **ptr);
 static char	**ft_fillstr(char *aux, char c, int num_substr, char **ptr);
+static void	ft_freesplit(char **ptr, int j);
 
 char	**ft_split(char const *s, char c)
 {
@@ -66,24 +67,25 @@ static void	ft_memasig(char *aux, char c, char **ptr)
 	int	j;
 	int	len_substr;
 
-	i = 0;
-	j = 0;
+	i = -1;
+	j = -1;
 	len_substr = 0;
-	while (aux[i])
+	while (aux[++i])
 	{
 		if (aux[i] != c)
 		{
 			len_substr++;
 			if ((aux[i + 1] == c || aux[i + 1] == '\0') && len_substr != 0)
 			{
-				ptr[j] = (char *)malloc(sizeof(char) * (len_substr + 1));
+				ptr[++j] = (char *)malloc(sizeof(char) * (len_substr + 1));
 				if (!ptr[j])
+				{
+					ft_freesplit(ptr, j);
 					return ;
+				}
 				len_substr = 0;
-				j++;
 			}
 		}
-		i++;
 	}
 }
 
@@ -113,4 +115,18 @@ static char	**ft_fillstr(char *aux, char c, int num_substr, char **ptr)
 	}
 	ptr[num_substr] = NULL;
 	return (ptr);
+}
+
+static void	ft_freesplit(char **ptr, int j)
+{
+	int	i;
+
+	i = 0;
+	while (i < j)
+	{
+		free(ptr[i]);
+		i++;
+	}
+	free(ptr);
+	return ;
 }
