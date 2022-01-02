@@ -23,7 +23,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@$(MAKE) -C $(LIBFT_PATH) --silent
 	@$(CC) -o $(NAME) $? -I. -L./libft -lft
-	@echo "push_swap: ready to be executed"
+	@echo $(NAME)": ready to be executed"
 
 clean:
 	@$(RM) $(OBJS)
