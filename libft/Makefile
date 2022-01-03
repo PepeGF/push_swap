@@ -25,8 +25,9 @@ RM = rm -f
 all: $(NAME)
 	
 $(NAME): $(OBJS)
-	@ar rcs $(NAME) $?
-	@echo "libft.a successfully compiled"
+	@ar rc $(NAME) $?
+	@ranlib $(NAME)
+	@echo $(NAME)" successfully compiled"
 
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)

@@ -7,7 +7,7 @@ OBJS = $(SRCS:.c=.o)
 
 NAME = push_swap
 
-LIBFT_PATH = libft/
+LIBFT_PATH = ./libft/
 
 CC = gcc
 
@@ -22,7 +22,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(MAKE) -C $(LIBFT_PATH) --silent
-	@$(CC) -o $(NAME) $? -I. -L./libft -lft
+	@$(CC) -o $(NAME) $? -I$(LIBFT_PATH) -L$(LIBFT_PATH) -lft
 	@echo $(NAME)": ready to be executed"
 
 clean:
