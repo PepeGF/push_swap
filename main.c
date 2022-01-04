@@ -6,7 +6,7 @@
 /*   By: josgarci <josgarci@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/14 12:08:47 by josgarci          #+#    #+#             */
-/*   Updated: 2021/12/31 23:24:09 by josgarci         ###   ########.fr       */
+/*   Updated: 2022/01/04 11:36:06 by josgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ int	main(int argc, char *argv[])
 	ft_check_duplicate(stack_a);
 	ft_range(stack_a);
 	total_numbers = ft_lstsize(stack_a);
-	if (total_numbers == 0)
-		ft_error_exit();
 	check = ft_check_order(stack_a);
 	if (check == 1)
 		return (0);
